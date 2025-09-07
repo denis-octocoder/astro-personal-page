@@ -1,0 +1,77 @@
+---
+---
+
+<section class="min-h-screen flex items-center justify-center relative overflow-hidden">
+  <!-- Background gradient -->
+  <div class="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-zinc-950 to-zinc-950"></div>
+  
+  <!-- Animated background dots -->
+  <div class="absolute inset-0 overflow-hidden">
+    <div class="absolute top-1/4 left-1/4 w-2 h-2 bg-purple-500/30 rounded-full animate-bounce-slow"></div>
+    <div class="absolute top-1/3 right-1/3 w-1 h-1 bg-purple-400/40 rounded-full animate-bounce-slow" style="animation-delay: 1s;"></div>
+    <div class="absolute bottom-1/4 left-1/3 w-1.5 h-1.5 bg-purple-600/20 rounded-full animate-bounce-slow" style="animation-delay: 2s;"></div>
+  </div>
+  
+  <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <div class="animate-fade-up flex flex-col lg:flex-row items-center gap-12">
+      <!-- Profile Photo -->
+      <div class="flex-shrink-0">
+        <div class="w-64 h-64 mx-auto lg:mx-0 rounded-full bg-gradient-to-br from-purple-500/20 to-purple-700/20 border-4 border-purple-500/30 flex items-center justify-center overflow-hidden">
+          <img 
+            src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400" 
+            alt="Denis Surkes - Profile Photo" 
+            class="w-full h-full object-cover rounded-full"
+          />
+        </div>
+      </div>
+      
+      <!-- Content -->
+      <div class="flex-1 text-center lg:text-left">
+      <h1 class="text-3xl md:text-5xl font-bold mb-6">
+        <span class="text-zinc-400">Hi, I'm</span>
+        <span class="bg-gradient-to-r from-white via-purple-200 to-purple-400 bg-clip-text text-transparent">
+          Denis Surkes
+        </span>
+      </h1>
+      
+      <h2 class="text-lg md:text-xl text-purple-300 font-light mb-8 font-mono">
+        System Architect & Fullstack Web Developer
+      </h2>
+      
+      <p class="text-lg md:text-xl text-zinc-300 mb-12 max-w-2xl mx-auto leading-relaxed">
+        With over a decade of experience building scalable cloud services and backend systems, I craft solutions that power real-world applications.
+      </p>
+      
+      <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center">
+        <a 
+          href="#projects" 
+          class="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white font-medium rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/25 min-w-[190px]"
+        >
+          <span>View My Work</span>
+          <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+          </svg>
+        </a>
+        
+        <a 
+          href="/cv.pdf" 
+          download
+          class="inline-flex items-center justify-center px-6 py-3 bg-zinc-800/50 hover:bg-zinc-700/50 text-white font-medium rounded-lg transition-all duration-300 hover:scale-105 border border-zinc-700/50 hover:border-purple-500/50 min-w-[190px]"
+        >
+          <svg class="mr-2 w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+          </svg>
+          <span>Download CV</span>
+        </a>
+        
+        <a 
+          href="#contact" 
+          class="inline-flex items-center justify-center px-6 py-3 border border-purple-500/50 text-purple-300 hover:bg-purple-500/10 font-medium rounded-lg transition-all duration-300 hover:border-purple-400 min-w-[190px]"
+        >
+          <span>Get In Touch</span>
+        </a>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
