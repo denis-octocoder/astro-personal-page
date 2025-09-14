@@ -1,7 +1,9 @@
 ---
+import { Image } from 'astro:assets';
+import profilePhoto from '../images/profile-photo.png';
 ---
 
-<section class="min-h-screen flex items-center justify-center relative overflow-hidden">
+<section class="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
   <!-- Background gradient -->
   <div class="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-zinc-950 to-zinc-950"></div>
   
@@ -17,10 +19,12 @@
       <!-- Profile Photo -->
       <div class="flex-shrink-0">
         <div class="w-64 h-64 mx-auto lg:mx-0 rounded-full bg-gradient-to-br from-purple-500/20 to-purple-700/20 border-4 border-purple-500/30 flex items-center justify-center overflow-hidden">
-          <img 
-            src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400" 
+          <Image 
+            src={profilePhoto} 
             alt="Denis Surkes - Profile Photo" 
-            class="w-full h-full object-cover rounded-full"
+            class="w-full h-full object-cover rounded-full scale-120"
+            width={512}
+            height={512}
           />
         </div>
       </div>

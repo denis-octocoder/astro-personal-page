@@ -1,19 +1,19 @@
 ---
 const skillCategories = [
   {
-    title: "Frontend",
-    icon: "🎨",
-    skills: ["React", "Vue.js", "TypeScript", "Tailwind CSS", "Next.js", "Astro"]
+    title: "Programming Languages",
+    icon: "👨‍💻",
+    skills: ["Java", "Kotlin", "JavaScript", "TypeScript", "Python", "Go"]
   },
   {
-    title: "Backend", 
+    title: "Frameworks & Libraries",
     icon: "⚙️",
-    skills: ["Node.js", "Python", "Express", "FastAPI", "PostgreSQL", "MongoDB"]
+    skills: ["NestJS", "Spring Boot", "Prisma", "NextJS", "Tailwind CSS", "Astro"]
   },
   {
     title: "Tools & DevOps",
     icon: "🛠️", 
-    skills: ["Docker", "AWS", "Git", "CI/CD", "Linux", "Kubernetes"]
+    skills: ["Docker", "AWS", "GCP", "CI/CD", "Linux", "Kubernetes"]
   }
 ];
 ---
@@ -32,7 +32,7 @@ const skillCategories = [
     
     <div class="grid md:grid-cols-3 gap-8">
       {skillCategories.map((category) => (
-        <div class="group bg-zinc-900/50 rounded-2xl p-8 border border-zinc-800/50 hover:border-purple-500/50 transition-all duration-300 hover:transform hover:scale-105">
+        <div class="group bg-zinc-900/50 rounded-2xl p-6 border border-zinc-800/50 hover:border-purple-500/50 transition-all duration-300 hover:transform hover:scale-105">
           <div class="text-center mb-6">
             <div class="text-4xl mb-4">{category.icon}</div>
             <h3 class="text-2xl font-semibold text-white group-hover:text-purple-300 transition-colors duration-300">
